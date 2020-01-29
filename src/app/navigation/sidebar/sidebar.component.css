@@ -1,0 +1,114 @@
+p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+  color: #999;
+}
+
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #374066;
+}
+
+.btn {
+  width: 56px;
+  height: 40px;
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100vw;
+  height: 100vh;
+}
+
+#sidebar {
+  /* don't forget to add all the previously mentioned styles here too */
+  position: fixed;
+  top: 4.5rem;
+  left: 0;
+  z-index: 90;
+  margin-left: -250px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  background: #374066;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: 0;
+}
+
+
+
+@media (min-width: 60rem) {
+  #sidebar {
+    margin-left: 0;
+  }
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #6d7fcc;
+}
+
+#sidebar ul.components {
+  border-bottom: 1px solid #23248b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+#sidebar ul li a:hover {
+  color: #374066;
+  background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+  color: #fff;
+  background: #272c66;
+}
+
+.user {
+  text-align: center;
+  padding: 1rem;
+}
+
+.user img{
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  padding: 0.2rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+img:hover {
+  box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.5);
+}
+
+.user-name {
+  font-size: 1.5rem;
+}
+
+.user-name:hover {
+  text-shadow: #8d8d8d 2px 2px 2px;
+}
