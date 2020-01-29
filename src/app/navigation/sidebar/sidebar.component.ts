@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any;
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -12,4 +14,8 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
   }
 
+  onOpenSidebar() {
+    $('#sidebar').toggleClass('active');
+    $('#overlay').toggleClass('shadow');
+  }
 }
