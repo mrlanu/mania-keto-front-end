@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {HeaderComponent} from './navigation/header/header.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {MainComponent} from './main/main.component';
 
 
 const routes: Routes = [
-  {path: 'welcome-page', component: HeaderComponent},
-  {path: '**', redirectTo: '/welcome-page'}
+  {path: 'main', component: MainComponent},
+  {path: '**', redirectTo: '/main'}
 ];
 
 @NgModule({
