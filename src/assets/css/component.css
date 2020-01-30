@@ -124,15 +124,17 @@ html, body, .perspective {
 }
 
 .outer-nav a {
+  text-decoration: none;
 	display: inline-block;
 	white-space: nowrap;
 	font-weight: 300;
 	margin: 0 0 30px 0;
-	color: #fff;
+	color: #e92c04;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+  text-shadow: #848484 3px 3px 4px;
 }
 
 .outer-nav a:hover {
@@ -162,15 +164,6 @@ html, body, .perspective {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-
-.icon-news::before { content: "\e600" }
-.icon-home::before { content: "" }
-.icon-image::before { content: "\e602" }
-.icon-upload::before { content: "\e603" }
-.icon-star::before { content: "\e604" }
-.icon-mail::before { content: "\e605" }
-.icon-lock::before { content: "\e606" }
-.icon-chart-pie::before { content: "\e607" }
 
 /* Individual Effects */
 
