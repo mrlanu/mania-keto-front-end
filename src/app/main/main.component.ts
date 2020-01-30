@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var start: any;
+declare var menu: any;
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    this.runJavaScript();
   }
 
+  runJavaScript() {
+    start(window);
+    menu();
+  }
 }
