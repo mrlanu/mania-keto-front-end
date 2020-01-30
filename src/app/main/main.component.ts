@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {faHome} from '@fortawesome/free-solid-svg-icons';
 
 declare var start: any;
 declare var menu: any;
@@ -9,6 +10,8 @@ declare var menu: any;
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
+
+  faHome = faHome;
 
   constructor() {}
 

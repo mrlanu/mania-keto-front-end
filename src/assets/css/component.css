@@ -164,7 +164,7 @@ html, body, .perspective {
 }
 
 .icon-news::before { content: "\e600" }
-.icon-home::before { content: "\e601" }
+.icon-home::before { content: "" }
 .icon-image::before { content: "\e602" }
 .icon-upload::before { content: "\e603" }
 .icon-star::before { content: "\e604" }
