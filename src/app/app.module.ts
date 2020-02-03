@@ -7,13 +7,15 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { MainComponent } from './main/main.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { DailySummaryComponent } from './main/daily-summary/daily-summary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    MainComponent
+    MainComponent,
+    DailySummaryComponent
   ],
   imports: [
     BrowserModule,

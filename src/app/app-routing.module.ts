@@ -1,11 +1,13 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './main/main.component';
+import {DailySummaryComponent} from './main/daily-summary/daily-summary.component';
 
 const routes: Routes = [
   /*{path: 'main', component: MainComponent},*/
   {path: 'main', component: MainComponent, children: [
-      /*{path: 'test1', component: HeaderComponent},
+      {path: '', component: DailySummaryComponent},
+      /*
       {path: 'test2', component: SidebarComponent},*/
       /*{path: 'charts', component: ChartsComponent},
       {path: 'budgets', component: BudgetsComponent},
