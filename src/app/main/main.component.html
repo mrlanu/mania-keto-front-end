@@ -1,41 +1,4 @@
 <app-header></app-header>
-<div id="perspective" class="perspective effect-airbnb">
-  <div class="cont">
-    <div class="wrapper"><!-- wrapper needed for scroll -->
-
-      <router-outlet></router-outlet>
-
-    </div><!-- wrapper -->
-  </div><!-- /cont -->
-  <nav class="outer-nav left vertical">
-    <a routerLink="/main/test2" class="icon-home my-ank">
-      <span style="margin-right: 1rem">
-        <fa-icon [icon]="faHome"></fa-icon>
-      </span>Home</a>
-    <a href="#" class="icon-news my-ank">
-      <span style="margin-right: 1rem">
-        <fa-icon [icon]="faNewspaper"></fa-icon>
-      </span>News</a>
-    <a href="#" class="icon-image my-ank">
-      <span style="margin-right: 1rem">
-        <fa-icon [icon]="faImages"></fa-icon>
-      </span>Images</a>
-    <a href="#" class="icon-upload my-ank">
-      <span style="margin-right: 1rem">
-        <fa-icon [icon]="faUpload"></fa-icon>
-      </span>Uploads</a>
-    <a href="#" class="icon-star my-ank">
-      <span style="margin-right: 1rem">
-        <fa-icon [icon]="faStar"></fa-icon>
-      </span>Favorites</a>
-    <a href="#" class="icon-mail my-ank">
-      <span style="margin-right: 1rem">
-        <fa-icon [icon]="faEnvelope"></fa-icon>
-      </span>Messages</a>
-    <a href="#" class="icon-lock my-ank">
-      <span style="margin-right: 1rem">
-        <fa-icon [icon]="faLock"></fa-icon>
-      </span>Security</a>
-  </nav>
-</div><!-- /perspective -->
+<app-sidebar></app-sidebar>
+<router-outlet></router-outlet>
 

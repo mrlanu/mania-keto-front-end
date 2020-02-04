@@ -9,6 +9,11 @@ declare var $: any;
 })
 export class SidebarComponent implements OnInit {
 
+  randomUser: any = {
+    name: 'Vasya',
+    image: 'imagePath'
+  };
+
   constructor() { }
 
   ngOnInit() {
