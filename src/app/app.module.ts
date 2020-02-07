@@ -8,6 +8,7 @@ import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { MainComponent } from './main/main.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { DailySummaryComponent } from './main/daily-summary/daily-summary.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DailySummaryComponent } from './main/daily-summary/daily-summary.compon
     BrowserModule,
     AppRoutingModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
